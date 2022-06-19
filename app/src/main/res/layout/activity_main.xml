@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="?attr/colorPrimary"
+    android:background="?android:attr/colorPressedHighlight"
     tools:context=".MainActivity">
 
     <LinearLayout
@@ -16,24 +16,25 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:layout_marginTop="32dp"
-        android:contentDescription="@string/desc_app_logo"
-        android:src="@drawable/ic_podcast_note" />
 
 
-    <TextView
-        android:id="@+id/tvAudioName"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="@string/tv_audio_name"
-        android:textAlignment="center"
-        android:textColor="?attr/colorOnPrimary"
-        android:textSize="20sp"
-        android:textStyle="bold" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="32dp"
+            android:contentDescription="@string/desc_app_logo"
+            android:src="@drawable/logobc" />
+
+        <TextView
+            android:id="@+id/tvAudioName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/tv_audio_name"
+            android:textAlignment="center"
+            android:textColor="?attr/colorOnPrimary"
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -122,7 +123,7 @@
         android:layout_height="wrap_content"
         android:layout_marginVertical="32dp"
         android:gravity="bottom"
-        android:text="@string/tv_copyrights"
+        android:text="Cindy Nurhabibah"
         android:textColor="?attr/colorOnPrimary"
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"

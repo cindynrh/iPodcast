@@ -57,10 +57,11 @@ public class MainActivity extends AppCompatActivity {
 
 
         /* load the music playlist */
-        musicList.add(new Podcast(getRawUri(R.raw.usai), "Usai"));
-        musicList.add(new Podcast(getRawUri(R.raw.sama_kamu_banyak_sedihnya_rintik_sedu_podcast), "rintik sedu"));
-        musicList.add(new Podcast(getRawUri(R.raw.jadi_dewasa_itu_tentang_menerima_dan_mengembalikan), "rintik sedu"));
-
+        musicList.add(new Podcast(getRawUri(R.raw.usai), "Rintik sedu - part 1"));
+        musicList.add(new Podcast(getRawUri(R.raw.sama_kamu_banyak_sedihnya_rintik_sedu_podcast), "Rintik sedu - part 2"));
+        musicList.add(new Podcast(getRawUri(R.raw.jadi_dewasa_itu_tentang_menerima_dan_mengembalikan), "Rintik sedu - part 3"));
+        musicList.add(new Podcast(getRawUri(R.raw.mereka_ada_namun_aku_selalu_merasa_sendirian),  "Helo Bagas - part 1"));
+        musicList.add(new Podcast(getRawUri(R.raw.cuma_bisa_bilang_gapapa), "Helo Bagas - part 2"));
 
 
         /* Initialize the audio player */
