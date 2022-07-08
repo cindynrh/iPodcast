@@ -2,6 +2,29 @@
     <string name="app_name">TA_PAM</string>
     <string name="tv_audio_name">Audio Name</string>
     <string name="desc_app_logo">App Logo</string>
+    <string name="tLogin">LOGIN</string>
+    <string name="tEmail">Email</string>
+    <string name="tPassword">Password</string>
+    <string name="bsignin">Sign-In</string>
+    <string name="tData">Data Anda</string>
+    <string name="txemail">ini hasil email</string>
+    <string name="txpassword">ini hasil password</string>
+    <string name="label">login berhasil</string>
+    <string name="mDaftar">Pendaftaran</string>
+    <string name="ldaftar">Daftar</string>
+    <string name="enama">Masukan Nama</string>
+    <string name="eemail">Masukan Email</string>
+    <string name="epass">Masukan Password</string>
+    <string name="erepass">Masukan Password Kembali</string>
+    <string name="ealamat">Masukan Alamat</string>
+    <string name="lihatdata">Lihat</string>
+    <string name="editdata">Edit Data</string>
+    <string name="hpsdata">Hapus Data</string>
+    <string name="datakontak">Data Kontak</string>
+    <string name="namaitem">Nama Item</string>
+    <string name="detailkontak">Detail Kontak</string>
+    <string name="nama">Nama</string>
+    <string name="notel">Nomor Telpon</string>
     <string name="desc_btn_next">Go to next song</string>
     <string name="tv_audio_position">00:00</string>
     <string name="tv_audio_duration">05:00</string>
@@ -10,4 +33,5 @@
     <string name="desc_btn_pause">Pause this song</string>
     <string name="desc_btn_stop">Stop music</string>
     <string name="tv_copyrights">&#169; 2021 by Fityan</string>
+    <string name="title_activity_user">User</string>
 </resources>

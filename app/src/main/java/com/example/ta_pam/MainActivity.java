@@ -7,6 +7,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.SeekBar;
 import android.widget.TextView;
@@ -21,11 +22,17 @@ import java.util.concurrent.TimeUnit;
 
 
 public class MainActivity extends AppCompatActivity {
+    public void BackApp(){
+
+    }
+
 
     /* View properties */
     TextView tvAudioName, tvAudioPosition, tvAudioDuration;
     SeekBar seekBarAudio;
-    ImageButton btnPrevious, btnNext, btnPlay, btnPause, btnStop;
+    ImageButton btnPrevious, btnNext, btnPlay, btnPause, btnStop,btnDel;
+
+
 
     /* Media player properties */
     final MediaPlayer mediaPlayer = new MediaPlayer();
@@ -40,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
@@ -54,6 +61,9 @@ public class MainActivity extends AppCompatActivity {
         btnStop = findViewById(R.id.btnStop);
         btnPrevious = findViewById(R.id.btnPrevious);
         btnNext = findViewById(R.id.btnNext);
+        btnDel = findViewById(R.id.btnDel);
+
+
 
 
         /* load the music playlist */
@@ -82,6 +92,7 @@ public class MainActivity extends AppCompatActivity {
         /* When Pause Button is clicked */
         btnPause.setOnClickListener(view -> pauseMusic());
 
+        btnDel.setOnClickListener(view -> deleteMusic());
 
         /* When Stop Button is clicked */
         btnStop.setOnClickListener(view -> {
@@ -149,6 +160,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+
+
     @Override
     protected void onDestroy() {
         /* Stop the media player */
@@ -160,6 +173,7 @@ public class MainActivity extends AppCompatActivity {
         /* Destroy the activity */
         super.onDestroy();
     }
+
 
     /**
      * Initialize the audio player.
@@ -193,8 +207,8 @@ public class MainActivity extends AppCompatActivity {
      */
     private void loadMusic(Podcast music) throws IOException {
         /* Reset the media player to idle. */
-        mediaPlayer.reset();
 
+        mediaPlayer.reset();
         /* Set the music to media player */
         mediaPlayer.setDataSource(getApplicationContext(), music.getUri());
 
@@ -288,6 +302,15 @@ public class MainActivity extends AppCompatActivity {
         handler.postDelayed(runnable, 0);
     }
 
+    private void deleteMusic() {
+
+
+
+       mediaPlayer.deselectTrack(R.raw.usai);
+
+    }
+
+
 
     /**
      * Pause the audio player.
@@ -368,4 +391,6 @@ public class MainActivity extends AppCompatActivity {
     private Uri getRawUri(int rawId) {
         return Uri.parse("android.resource://" + getPackageName() + "/" + rawId);
     }
+
+
 }

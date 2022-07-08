@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="?android:attr/colorPressedHighlight"
+    android:background="@color/purple_200"
     tools:context=".MainActivity">
 
     <LinearLayout
@@ -17,6 +17,23 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
+
+        <Button
+            android:id="@+id/btnbck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="161dp"
+            android:layout_marginLeft="161dp"
+            android:contentDescription="Back"
+            android:onClick="BackApp"
+            android:text="Back"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageButton
+            android:id="@+id/btnDel"
+            android:layout_width="36dp"
+            android:layout_height="31dp"
+            android:src="@drawable/delete" />
 
         <ImageView
             android:layout_width="match_parent"
@@ -113,12 +130,13 @@
                 android:contentDescription="@string/desc_btn_next"
                 android:src="@drawable/ic_skip_next" />
 
+
         </LinearLayout>
 
     </LinearLayout>
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/mnEdit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginVertical="32dp"

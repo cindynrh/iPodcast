@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".formpendaftaran">
+    <TextView
+        android:id="@+id/mnEdit"
+        android:layout_width="103dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="48dp"
+        android:text="@string/ldaftar"
+        android:textSize="15pt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edNama"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="64dp"
+        android:ems="10"
+        android:hint="@string/enama"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mnEdit" />
+
+    <EditText
+        android:id="@+id/edAlamat"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="60dp"
+        android:ems="10"
+        android:hint="@string/ealamat"
+        android:inputType="textMultiLine|text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edNama" />
+
+    <EditText
+        android:id="@+id/EdEmail"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:hint="@string/eemail"
+        android:inputType="textPersonName|textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edAlamat" />
+
+    <EditText
+        android:id="@+id/edrepas"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:hint="@string/erepass"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edPass"
+        app:layout_constraintVertical_bias="0.018" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/febSimpan"
+        android:layout_width="76dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="4dp"
+        android:clickable="true"
+        android:contentDescription="@string/enama"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.85"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edrepas"
+        app:srcCompat="@android:drawable/ic_menu_save" />
+
+    <EditText
+        android:id="@+id/edPass"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="@string/epass"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EdEmail" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
